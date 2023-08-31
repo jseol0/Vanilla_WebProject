@@ -14,7 +14,10 @@ function checkEmail(input) {
 }
 
 function checkConfirm(p1, p2) {
-	if (p1.value === p2.value)
+	const formbox = p1.parentElement;
+	if (formbox.classList.contains("error"))
+		return false;
+	else if (p1.value === p2.value)
 		return true;
 	else
 		return false;
