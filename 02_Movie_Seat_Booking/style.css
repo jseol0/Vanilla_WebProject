@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+  
+body {
+	background: #242333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+}
+  
+.selectbox {
+	margin: 20px 0;
+}
+
+.selectbox label{
+	color: white;
+}
+
+select {
+	appearance:none
+}
+
+.movielist {
+	margin-left: 10px;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.seatstatus {
+	color: #777;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.seatstatus li {
+	display: flex;
+	margin: 0 10px;
+}
+
+.seatstatus li small{
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.seat {
+	height: 12px;
+	width: 15px;
+	margin: 3px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #444451;
+}
+
+.seat.selected {
+	background-color: #6feaf6;
+}
+
+.seat.occupied {
+	background-color: #fff;
+}
+
+.row .seat:not(.occupied):hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.mainbox {
+	perspective: 1000px;
+	margin-bottom: 30px;
+}
+
+.screen {
+	background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+	
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.empty {
+	height: 12px;
+	width: 15px;
+	margin: 3px;
+	background: #242333;
+}
+
+.info {
+	color: #fff;
+	margin: 5px 0;
+}
+
+span {
+	color: #6feaf6;
+}
