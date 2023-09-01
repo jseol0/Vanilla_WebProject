@@ -4,8 +4,6 @@ const seatbox = document.querySelector(".seatbox")
 const count = document.querySelector(".count");
 const total = document.querySelector(".total")
 
-let price = movie.value;
-
 function changeinfo() {
 	count.innerHTML = count.value;
 	total.innerHTML = count.value * movie.value;
